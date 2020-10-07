@@ -1,0 +1,68 @@
+---
+title: "課堂練習模版"
+author: "Tommy project"
+date: "2020-10-07"
+output: output_format
+params:
+  id: "410973045"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Your code
+
+```{r}
+num1<-5
+num1
+vNum1<-c(2,5)
+vNum1
+vNum2<-c(2,num1)
+```
+
+
+```{r}
+vNum2
+```
+
+```{r}
+vNum1<-vNum2
+vNum2<-c(2,vNum1)
+```
+
+
+```{r}
+a<-15
+b<-a
+c<-y
+y<-22
+is("y")
+```
+
+
+```{r}
+heightOfAStudentComingInsideTheClassroom<-sample(165:200,1)
+```
+
+
+```{r}
+heightsOftheEntireClass<-c(heightsOftheEntireClassroom,heightOfAStudentComingInsideTheClassroom)
+```
+
+
+```{r}
+dialogue <- c('小明說："明天不用上課。"',
+               '小花說："真的嗎？"')
+
+dialogue # 顯示原始值的內容（含輸入時的引號）
+cat(dialogue, sep="\n") # 顯示給人類看（含存出來）的值，sep="\n", 不同元素換行陳列。
+writeLines(dialogue, "conversation.txt") # cat顯示的正是存出來樣貌。
+```
+
+
+```{r}
+context<-"i need a space.\n"
+context1<-"i love you."
+cat(context,context1)
+```
